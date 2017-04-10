@@ -1,0 +1,22 @@
+{
+    "kind": "ClusterResourceQuota",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "crq5",
+        "creationTimestamp": null
+    },
+    "spec": {
+	"selector": {
+            "labels": null,
+            "annotations": {
+                "openshift.io/display-name": "E"
+            }
+	},
+	"quota": {
+            "hard": {
+                "persistentvolumeclaims": "30000",
+                "requests.storage": "30000Gi"
+            }
+	}
+    }
+}

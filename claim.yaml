@@ -1,0 +1,14 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  generateName: claim-
+  labels:
+    "the-force": "awakened"
+    "adventure": "not-craved"
+    "size": "matters-not"
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
